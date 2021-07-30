@@ -6,8 +6,8 @@ LABEL "com.github.actions.description"="Build & Publish Release APK on Github"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/Cafrecode/action-release-apk"
-LABEL "maintainer"="Cafrecode"
+LABEL "repository"="https://github.com/hosek/action-release-apk"
+LABEL "maintainer"="hosek"
 
 RUN apt update \
 	&& apt -y upgrade \
