@@ -36,11 +36,12 @@ jobs:
     - name: Build Debug APK
       run: ./gradlew assembleDebug
     - name: Releasing using Hub
-      uses: ShaunLWM/action-release-debugapk@master
+      uses: hosek/action-release-apk@master
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
        APP_FOLDER: app
        RELEASE_TITLE: New Build
+       FLAVOUR: fullVersion
 ```
 
 ### Secrets
@@ -57,6 +58,7 @@ You'll need to provide these environment variables to specify exactly what infor
 
 * **APP_FOLDER**: main folder to search for the apk. Most of the time, it's `app`
 * **RELEASE_TITLE**: title for release
+* **FLAVOUR**: flavour - used to set right path to release
 
 ## Credits
 
